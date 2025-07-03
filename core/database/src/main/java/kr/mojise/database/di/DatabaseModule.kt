@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.google.samples.apps.nowinandroid.core.database.di
+package kr.mojise.database.di
 
-import android.content.Context
-import androidx.room.Room
-import com.google.samples.apps.nowinandroid.core.database.NiaDatabase
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.android.qualifiers.ApplicationContext
-import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
+//import android.content.Context
+//import androidx.room.Room
+//import dagger.Module
+//import dagger.Provides
+//import dagger.hilt.InstallIn
+//import dagger.hilt.android.qualifiers.ApplicationContext
+//import dagger.hilt.components.SingletonComponent
+//import kr.mojise.database.Database
+//import javax.inject.Singleton
 
-@Module
-@InstallIn(SingletonComponent::class)
-internal object DatabaseModule {
-    @Provides
-    @Singleton
-    fun providesNiaDatabase(
-        @ApplicationContext context: Context,
-    ): NiaDatabase = Room.databaseBuilder(
-        context,
-        NiaDatabase::class.java,
-        "nia-database",
-    ).build()
-}
+//@Module
+//@InstallIn(SingletonComponent::class)
+//internal object DatabaseModule {
+//    @Provides
+//    @Singleton
+//    fun providesNiaDatabase(
+//        @ApplicationContext context: Context,
+//    ): Database = Room.databaseBuilder(
+//        context,
+//        Database::class.java,
+//        "app-database",
+//    ).build()
+//}

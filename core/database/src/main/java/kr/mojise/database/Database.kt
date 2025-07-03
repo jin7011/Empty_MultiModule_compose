@@ -21,17 +21,17 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import kr.mojise.database.util.InstantConverter
 
-
-@Database(
-    entities = [
-    ],
-    version = 14,
-    autoMigrations = [
-    ],
-    exportSchema = true,
-)
-@TypeConverters(
-    InstantConverter::class
-)
-internal abstract class Database : RoomDatabase() {
-}
+//ex)
+//@Database(
+//    entities = [
+//    ],
+//    version = 14,
+//    autoMigrations = [
+//    ],
+//    exportSchema = true,
+//)
+//@TypeConverters(¡¡
+//    InstantConverter::class
+//)
+//internal abstract class Database : RoomDatabase() {
+//}
