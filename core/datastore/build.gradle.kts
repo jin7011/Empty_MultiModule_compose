@@ -1,3 +1,5 @@
+import kr.mojise.setNamespace
+
 plugins {
     alias(libs.plugins.app.android.library)
     alias(libs.plugins.app.android.library.jacoco)
@@ -8,16 +10,15 @@ android {
     defaultConfig {
         consumerProguardFiles("consumer-proguard-rules.pro")
     }
-    namespace = "kr.mojise.default_compose.core.datastore"
+    setNamespace("core.datastore")
 }
 
 dependencies {
     api(libs.androidx.dataStore)
     api(projects.core.datastoreProto)
-//    api(projects.core.model)
+    api(projects.core.model)
 
     implementation(projects.core.common)
 
-//    testImplementation(projects.core.datastoreTest)
     testImplementation(libs.kotlinx.coroutines.test)
 }

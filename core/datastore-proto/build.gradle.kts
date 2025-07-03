@@ -1,10 +1,12 @@
+import kr.mojise.setNamespace
+
 plugins {
     alias(libs.plugins.app.android.library)
     alias(libs.plugins.protobuf)
 }
 
 android {
-    namespace = "kr.mojise.default_compose.core.datastore"
+    setNamespace("core.datastore.proto")
 }
 
 // Setup protobuf configuration, generating lite Java and Kotlin classes

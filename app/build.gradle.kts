@@ -1,4 +1,4 @@
-import com.mojise.BuildType
+import kr.mojise.BuildType
 
 plugins {
     alias(libs.plugins.app.android.application)

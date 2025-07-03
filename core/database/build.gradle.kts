@@ -1,3 +1,5 @@
+import kr.mojise.setNamespace
+
 plugins {
     alias(libs.plugins.app.android.library)
     alias(libs.plugins.app.android.library.jacoco)
@@ -6,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "kr.mojise.default_compose.core.database"
+    setNamespace("core.database")
 }
 
 dependencies {
-//    api(projects.core.model)
+    api(projects.core.model)
 
     implementation(libs.kotlinx.datetime)
 

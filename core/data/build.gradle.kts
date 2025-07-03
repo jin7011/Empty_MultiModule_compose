@@ -1,3 +1,5 @@
+import kr.mojise.setNamespace
+
 /*
  * Copyright 2022 The Android Open Source Project
  *
@@ -21,7 +23,7 @@ plugins {
 }
 
 android {
-    namespace = "kr.mojise.default_compose.core.data"
+    setNamespace("core.data")
     testOptions {
         unitTests {
             isIncludeAndroidResources = true
@@ -32,8 +34,8 @@ android {
 dependencies {
     api(projects.core.common)
     api(projects.core.database)
-//    api(projects.core.datastore)
-//    api(projects.core.network)
+    api(projects.core.datastore)
+    api(projects.core.network)
 
 //    implementation(projects.core.analytics)
 //    implementation(projects.core.notifications)

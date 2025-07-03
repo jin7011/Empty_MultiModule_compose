@@ -1,4 +1,5 @@
 [versions]
+basePackage = "kr.mojise.default_compose"
 accompanist = "0.37.0"
 androidDesugarJdkLibs = "2.1.4"
 # AGP and tools should be updated together
