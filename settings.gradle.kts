@@ -1,3 +1,6 @@
+//gradle 8.1 이하는 이걸 써줘야 api(projects.core.common) 처럼 projects. 을 사용 가능.
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {
@@ -29,3 +32,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "default_compose"
 include(":app")
+include(":core:common")
+include(":core:data")
